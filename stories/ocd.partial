@@ -1,0 +1,71 @@
+<div id="carousel-facts" class="carousel slide" data-ride="carousel" data-interval="10000">
+<div class="row">
+  <div class="col-md-4">
+      <div class="carousel-inner">
+          <div class="item active">
+              <div class="carousel-content">
+                  <div class= "ocd">
+                      <h3>Obsessive-Compulsive Disorder</h3>
+                      <p>Obsessive-Compulsive Disorder (OCD) is a common, chronic
+                        and long-lasting disorder in which a person has uncontrollable,
+                        reoccurring thoughts (obsessions) and behaviors (compulsions) that
+                        he or she feels the urge to repeat over and over.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <div class="carousel-content">
+                  <div class= "ocd">
+                      <h3>Obsessive-Compulsive Disorder</h3>
+                      <p>Obsessions are repeated thoughts, urges, or mental images that cause
+                        anxiety.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <div class="carousel-content">
+                  <div class= "ocd">
+                      <h3>Obsessive-Compulsive Disorder</h3>
+                      <p>Compulsions are repetitive behaviors that a person with OCD feels the
+                        urge to do in response to an obsessive thought.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+ </div>
+</div>
+<div id="carousel-stories" class="carousel slide" data-ride="carousel" data-interval="15000">
+<div class="row">
+  <div class="col-md-4">
+      <div class="carousel-inner">
+          <div class="item active">
+              <div class="carousel-content">
+                  <div class= "ocd">
+                      <h3>Obsessive-Compulsive Disorder</h3>
+                      <p>My obsessive focus on order has placed a toll on all of my romantic relationships</p>
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <div class="carousel-content">
+                  <div class= "ocd">
+                      <h3>Obsessive-Compulsive Disorder</h3>
+                      <p>I struggle with accepting the fact that I will never reach the
+                      level of cleanliness that my disorder demands.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <div class="carousel-content">
+                  <div class= "ocd">
+                      <h3>Obsessive-Compulsive Disorder</h3>
+                      <p>I try not to let my coworkers see the complex, orchestrated ritual I undertake, every
+                      time I get up from my desk</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+ </div>
+</div>

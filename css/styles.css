@@ -1,0 +1,484 @@
+
+@font-face {
+  font-family: "Avenir Light";
+  src: url(./font/Avenir.ttc);
+}
+
+*font-family {
+  font-family: "Avenir Light";
+}
+
+/* Add a black background color to the top navigation */
+
+.nav {
+    background-color: #000000;
+    overflow: hidden;
+    font-family: "futura-pt", "Nunito", sans-serif;
+    font-size: 10px;
+    style: normal;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+#BarNav {
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+    display: inline-block;
+    float: none;
+    color: rgba(255,255,255,.5);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    color: #f2f0ee;
+    background-color: #000000; !important;
+}
+
+/* Add a color to the active/current link */
+.nav>li>a:focus, .nav>li>a:hover {
+    color: rgba(255,255,255,0.9);
+    background-color: #000000;
+}
+
+body {
+  background-color: #000000;
+  /*overflow: hidden;*/
+}
+
+#map {
+  padding-top: 55px;
+  max-width: 50%;
+}
+
+.formContent {
+  text-align: left;
+  display: inline-block;
+}
+
+#questionaire {
+  text-align: center;
+  padding-top: 125px;
+}
+
+#story {
+   max-width: 600px;
+   padding-top: 45px;
+}
+
+.oakland {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 10%;
+  color: rgba(255, 255, 255, .3);
+  align-items:center;
+}
+
+/*.oakland h3 {
+  font-size: 48px;
+}
+
+.oakland h3 {
+  font-size: 32px;
+}*/
+
+.oakland {
+   font-size: 46px;
+   font-family: "futura-pt", "Nunito", sans-serif;
+   line-height: .75em;
+   text-transform: none;
+   letter-spacing: .075em;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: rgba(207, 207, 210, 0.99);
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group, .checkbox, #questionaire {
+     color: rgba(207, 207, 210, 0.99);
+     font-size: 15px;
+     font-family: "futura-pt", "Nunito", sans-serif;
+     line-height: 1.4em;
+     text-transform: none;
+     letter-spacing: .075em;
+     font-weight: 200;
+     font-style: normal;
+     text-decoration: none;
+}
+
+.btn-danger {
+  background-color: #793b39 !important;
+  border-color: #312120 !important;
+  font-family: "futura-pt", "Nunito", sans-serif;
+}
+
+.btn-danger:focus,.btn-danger:active, .btn-danger:hover {
+   outline: none !important;
+   background-color: #793b39;
+   border-color: #312120;
+}
+
+.btn-primary {
+  font-family: "futura-pt", "Nunito", sans-serif;
+  background-color: #193246;
+  border-color: #09090a;
+}
+
+.btn-primary:focus,.btn-primary:active, .btn-primary:hover {
+   outline: none !important;
+   background-color: #193246;
+   border-color: #09090a;
+}
+
+#contextualinfo, #McCoyinfo {
+   font-size: 18px;
+   font-family: "futura-pt", "Nunito", sans-serif;
+   line-height: 1.2em;
+   text-transform: none;
+   letter-spacing: .075em;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: rgba(207, 207, 210, 0.99);
+}
+
+.resources {
+   font-size: 16px;
+   font-family: "futura-pt", "Nunito", sans-serif;
+   line-height: .75em;
+   text-transform: none;
+   letter-spacing: .075em;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: rgba(207, 207, 210, 0.99);
+}
+
+#contextualinfo {
+  text-align: center;
+  padding-top: 155px;
+  max-width: 800px;
+}
+
+#McCoyinfo {
+  text-align: center;
+  max-width: 600px;
+}
+
+hr {
+  width: 50%;
+  color: #bbb;
+  border-style: none;
+  border-width: 0;
+  background-color: #f4f0ff;
+  height: 1px;
+  opacity: .2
+}
+
+#logo {
+  padding-top: 25px;
+}
+
+.resources {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.resourcepageline {
+  width: 17%;
+  color: #bbb;
+  border-style: none;
+  border-width: 0;
+  background-color: #f4f0ff;
+  height: 1px;
+  opacity: .2
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/*.camomap {
+  background-image: url('../img/C_Camo_Map.png');;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+  background-position: top;
+  height: 800px;
+  }
+*/
+
+.camomap {
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+  text-align: center;
+  color: white;
+}
+
+.blur {
+  filter: blur(5px);
+  }
+
+.newclass {
+  position: relative;
+}
+
+#loveinfo {
+   font-size: 18px;
+   line-height: 1.8em;
+   text-transform: none;
+   letter-spacing: .075em;
+   font-style: normal;
+   text-decoration: none;
+   color: rgba(207, 207, 210, 0.99);
+}
+
+.icon-bar {
+  background-color: white;
+}
+/*For footer */
+.bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+.bottom_ul li { float:left; line-height:40px;}
+.bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+.bottom_ul li a { color:#FFF;  font-size:12px;}
+
+
+.icon-bar {
+  background-color: white;
+}
+
+#Academylogo {
+  padding-top: 55px;
+}
+
+.bothlogos {
+  padding-right: 35px;
+
+}
+.copyright {
+  margin-top: 200px;
+}
+#count_message {
+  color: white;
+}
+.carousel-content {
+    color: white;
+    display:flex;
+    align-items:center;
+}
+
+.depression h3 {
+    color: #03264c;
+}
+
+.anxiety h3 {
+    color: #ffff00;
+}
+
+.ocd h3 {
+    color: #94261c;
+}
+
+.dementia h3 {
+    color: #7f47dd;
+}
+
+.adhd h3 {
+    color: #ff9900;
+}
+
+.autism h3 {
+    color: #128ab2;
+}
+
+.bipolar h3 {
+    color: #64f566;
+}
+
+.schizophrenia h3 {
+    color: #db3a7a;
+}
+
+.ptsd h3 {
+    color: #159993;
+}
+
+.sendlove {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  font-family: 'Avenir Light',sans-serif;
+  line-height: 50px;
+  font-size: 17pt;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.sendlove:nth-child(1) {
+  color: #fff;
+  transform: translate3d(0, 0, 30px);
+  -webkit-transform: translate3d(0, 0, 30px);
+}
+
+.sendlove:nth-child(2) {
+  color: #415713;
+  background: #fff;
+  transform: rotateX(90deg) translate3d(0, 0, 30px);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
+}
+
+body {
+  height: 100%;
+}
+
+#sharebox {
+   text-align: center;
+   margin-left: -8px;
+}
+
+figure {
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+
+figure div {
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+}
+
+figure:hover div {
+  transform: rotateX(-90deg);
+}
+
+.submitstory {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  font-family: 'Avenir Light',sans-serif;
+  line-height: 50px;
+  font-size: 17pt;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.submitstory:nth-child(1) {
+  color: #fff;
+  transform: translate3d(0, 0, 30px);
+  -webkit-transform: translate3d(0, 0, 30px);
+}
+
+.submitstory:nth-child(2) {
+  color: #415713;
+  background: #fff;
+  transform: rotateX(90deg) translate3d(0, 0, 30px);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
+}
+
+.blah {
+            stroke: red;
+            stroke-width: 10px;
+        }
+
+        circle {
+            opacity: .5;
+        }
+
+        .depression {
+            fill: #03264c;
+        }
+
+        .anxiety {
+            fill: #ffff00;
+        }
+
+        .ocd {
+            fill: #94261c;
+        }
+
+        .dementia {
+            fill: #7f47dd;
+        }
+
+        .adhd {
+            fill: #ff9900;
+        }
+
+        .autism {
+            fill: #128ab2;
+        }
+
+        .bipolar {
+            fill: #64f566;
+        }
+
+        .schizophrenia {
+            fill: #db3a7a;
+        }
+
+        .ptsd {
+            fill: #159993;
+        }
+
+        svg {
+            background-color: #000000;
+        }
+
+        path {
+            fill: #504c3d;
+        }
