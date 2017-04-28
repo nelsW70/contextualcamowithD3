@@ -63,65 +63,34 @@
 
 body {
   background-color: #000000;
-  /*overflow: hidden;*/
+  overflow: hidden;
+  height: 100%;
 }
 
-#map {
+
+/*#map {
   padding-top: 55px;
   max-width: 50%;
-}
-
-.formContent {
-  text-align: left;
-  display: inline-block;
-}
-
-#questionaire {
-  text-align: center;
-  padding-top: 125px;
-}
-
-#story {
-   max-width: 600px;
-   padding-top: 45px;
-}
-
-.oakland {
-  position: absolute;
-  display: flex;
-  top: 50%;
-  left: 10%;
-  color: rgba(255, 255, 255, .3);
-  align-items:center;
-}
-
-/*.oakland h3 {
-  font-size: 48px;
-}
-
-.oakland h3 {
-  font-size: 32px;
 }*/
 
 .oakland {
-   font-size: 46px;
-   font-family: "futura-pt", "Nunito", sans-serif;
-   line-height: .75em;
-   text-transform: none;
-   letter-spacing: .075em;
-   font-weight: 300;
-   font-style: normal;
-   text-decoration: none;
-   color: rgba(207, 207, 210, 0.99);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: rgba(255, 255, 255, .3);
 }
 
-.form-group {
-  text-align: left;
+.oakland h1 {
+  font-size: 48px;
 }
 
-.form-group, .checkbox, #questionaire {
+.oakland h2 {
+  font-size: 32px;
+}
+
+.oakland {
      color: rgba(207, 207, 210, 0.99);
-     font-size: 15px;
+     font-size: 12px;
      font-family: "futura-pt", "Nunito", sans-serif;
      line-height: 1.4em;
      text-transform: none;
@@ -130,110 +99,6 @@ body {
      font-style: normal;
      text-decoration: none;
 }
-
-.btn-danger {
-  background-color: #793b39 !important;
-  border-color: #312120 !important;
-  font-family: "futura-pt", "Nunito", sans-serif;
-}
-
-.btn-danger:focus,.btn-danger:active, .btn-danger:hover {
-   outline: none !important;
-   background-color: #793b39;
-   border-color: #312120;
-}
-
-.btn-primary {
-  font-family: "futura-pt", "Nunito", sans-serif;
-  background-color: #193246;
-  border-color: #09090a;
-}
-
-.btn-primary:focus,.btn-primary:active, .btn-primary:hover {
-   outline: none !important;
-   background-color: #193246;
-   border-color: #09090a;
-}
-
-#contextualinfo, #McCoyinfo {
-   font-size: 18px;
-   font-family: "futura-pt", "Nunito", sans-serif;
-   line-height: 1.2em;
-   text-transform: none;
-   letter-spacing: .075em;
-   font-weight: 300;
-   font-style: normal;
-   text-decoration: none;
-   color: rgba(207, 207, 210, 0.99);
-}
-
-.resources {
-   font-size: 16px;
-   font-family: "futura-pt", "Nunito", sans-serif;
-   line-height: .75em;
-   text-transform: none;
-   letter-spacing: .075em;
-   font-weight: 300;
-   font-style: normal;
-   text-decoration: none;
-   color: rgba(207, 207, 210, 0.99);
-}
-
-#contextualinfo {
-  text-align: center;
-  padding-top: 155px;
-  max-width: 800px;
-}
-
-#McCoyinfo {
-  text-align: center;
-  max-width: 600px;
-}
-
-hr {
-  width: 50%;
-  color: #bbb;
-  border-style: none;
-  border-width: 0;
-  background-color: #f4f0ff;
-  height: 1px;
-  opacity: .2
-}
-
-#logo {
-  padding-top: 25px;
-}
-
-.resources {
-  text-align: center;
-  padding-top: 100px;
-}
-
-.resourcepageline {
-  width: 17%;
-  color: #bbb;
-  border-style: none;
-  border-width: 0;
-  background-color: #f4f0ff;
-  height: 1px;
-  opacity: .2
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:focus {
-  color: inherit;
-  text-decoration: none;
-}
-
 
 /*.camomap {
   background-image: url('../img/C_Camo_Map.png');;
@@ -269,44 +134,22 @@ a:focus {
   position: relative;
 }
 
-#loveinfo {
-   font-size: 18px;
-   line-height: 1.8em;
-   text-transform: none;
-   letter-spacing: .075em;
-   font-style: normal;
-   text-decoration: none;
-   color: rgba(207, 207, 210, 0.99);
-}
 
 .icon-bar {
   background-color: white;
 }
 /*For footer */
-.bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
-.bottom_ul li { float:left; line-height:40px;}
-.bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
-.bottom_ul li a { color:#FFF;  font-size:12px;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
 
 
 .icon-bar {
   background-color: white;
 }
 
-#Academylogo {
-  padding-top: 55px;
-}
 
-.bothlogos {
-  padding-right: 35px;
-
-}
-.copyright {
-  margin-top: 200px;
-}
-#count_message {
-  color: white;
-}
 .carousel-content {
     color: white;
     display:flex;
@@ -349,86 +192,6 @@ a:focus {
     color: #159993;
 }
 
-.sendlove {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  box-sizing: border-box;
-  border: 5px solid #fff;
-  font-family: 'Avenir Light',sans-serif;
-  line-height: 50px;
-  font-size: 17pt;
-  text-align: center;
-  text-transform: lowercase;
-}
-
-.sendlove:nth-child(1) {
-  color: #fff;
-  transform: translate3d(0, 0, 30px);
-  -webkit-transform: translate3d(0, 0, 30px);
-}
-
-.sendlove:nth-child(2) {
-  color: #415713;
-  background: #fff;
-  transform: rotateX(90deg) translate3d(0, 0, 30px);
-  -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
-}
-
-body {
-  height: 100%;
-}
-
-#sharebox {
-   text-align: center;
-   margin-left: -8px;
-}
-
-figure {
-  width: 200px;
-  height: 60px;
-  cursor: pointer;
-  perspective: 500px;
-  -webkit-perspective: 500px;
-}
-
-figure div {
-  height: 100%;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  transition: 0.25s;
-  -webkit-transition: 0.25s;
-}
-
-figure:hover div {
-  transform: rotateX(-90deg);
-}
-
-.submitstory {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  box-sizing: border-box;
-  border: 5px solid #fff;
-  font-family: 'Avenir Light',sans-serif;
-  line-height: 50px;
-  font-size: 17pt;
-  text-align: center;
-  text-transform: lowercase;
-}
-
-.submitstory:nth-child(1) {
-  color: #fff;
-  transform: translate3d(0, 0, 30px);
-  -webkit-transform: translate3d(0, 0, 30px);
-}
-
-.submitstory:nth-child(2) {
-  color: #415713;
-  background: #fff;
-  transform: rotateX(90deg) translate3d(0, 0, 30px);
-  -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
-}
 
 .blah {
             stroke: red;
