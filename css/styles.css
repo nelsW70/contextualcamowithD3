@@ -100,19 +100,17 @@ body {
      text-decoration: none;
 }
 
-/*.camomap {
+.camomap {
   background-image: url('../img/C_Camo_Map.png');;
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: center;
   background-position: top;
   height: 800px;
-  }
-*/
-
-.camomap {
   text-align: center;
-}
+  margin-top: 5%;
+  }
+
 
 .overlay {
   position: absolute;
@@ -151,9 +149,18 @@ body {
 
 
 .carousel-content {
-    color: white;
     display:flex;
     align-items:center;
+    color: rgba(207, 207, 210, 0.99);
+    font-size: 15px;
+    font-family: "futura-pt", "Nunito", sans-serif;
+    line-height: 1.4em;
+    text-transform: none;
+    letter-spacing: .075em;
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    margin: 0% 10%;
 }
 
 .depression h3 {
