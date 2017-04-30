@@ -68,10 +68,7 @@ body {
 }
 
 
-/*#map {
-  padding-top: 55px;
-  max-width: 50%;
-}*/
+
 
 .oakland {
   position: absolute;
@@ -143,9 +140,6 @@ body {
  .bottom_ul li a { color:#FFF;  font-size:12px;}
 
 
-.icon-bar {
-  background-color: white;
-}
 
 
 .carousel-content {
