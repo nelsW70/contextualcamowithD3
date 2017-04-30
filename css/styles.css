@@ -68,24 +68,7 @@ body {
 }
 
 
-
-
-.oakland {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  color: rgba(255, 255, 255, .3);
-}
-
-.oakland h1 {
-  font-size: 48px;
-}
-
-.oakland h2 {
-  font-size: 32px;
-}
-
-.oakland {
+/*.oakland {
      color: rgba(207, 207, 210, 0.99);
      font-size: 12px;
      font-family: "futura-pt", "Nunito", sans-serif;
@@ -95,7 +78,7 @@ body {
      font-weight: 200;
      font-style: normal;
      text-decoration: none;
-}
+}*/
 
 .camomap {
   background-image: url('../img/C_Camo_Map.png');;
@@ -103,7 +86,9 @@ body {
   background-size: 30%;
   background-position: center;
   background-position: top;
-  height: 800px;
+  /*height: 800px;*/
+  max-width: 100%;
+  height: auto;
   text-align: center;
   margin-top: 5%;
   }
@@ -155,6 +140,22 @@ body {
     font-style: normal;
     text-decoration: none;
     margin: 0% 10%;
+}
+
+.location {
+  display: block;
+  align-items:center;
+  color: rgba(207, 207, 210, 0.99);
+  font-size: 15px;
+  font-family: "futura-pt", "Nunito", sans-serif;
+  line-height: 1.4em;
+  text-transform: none;
+  letter-spacing: .075em;
+  font-weight: 200;
+  font-style: normal;
+  text-decoration: none;
+  margin: 0% 10%;
+  opacity: .5;
 }
 
 .depression h3 {
