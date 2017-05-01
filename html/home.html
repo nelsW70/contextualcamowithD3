@@ -78,11 +78,10 @@
     <div class="newclass">
       <div class="camomap" id="map"></div>
       <div class="overlay">
-        <!-- <div class="location">
-          <p>
-            Oakland, PA
-          </p>
-        </div> -->
+        <div>
+          <h4 class="location">Oakland</h4>
+
+        </div>
         <div class="container">
           <div id="stories"></div>
         </div>
@@ -175,8 +174,7 @@ function point_shrink()
     //Create SVG constructor
     var svg = d3.select(".camomap")
         .append("svg")
-        .attr("width", w)
-        .attr("height", h);
+        .attr("viewBox", "0 0 500 800");
 
     //Load in GeoJSON data
     d3.json("../json/NorthOakland.json", function(error, json) {

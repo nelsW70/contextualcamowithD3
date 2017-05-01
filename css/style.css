@@ -188,10 +188,6 @@ a:focus {
   text-decoration: none;
 }
 
-.loveBlock {
-  padding-top: 75px;
-}
-
 .camomap {
   background-image: url('../img/c_camo_map_720.png');
   background-repeat: no-repeat;
@@ -248,9 +244,13 @@ a:focus {
    color: rgba(207, 207, 210, 0.99);
 }*/
 
+/*.loveBlock {
+  padding-top: 75px;
+}*/
+
 #loveinfo {
   text-align: center;
-  padding-top: 250px;
+  margin-top: 20%;
 }
 
 .sendlove {
@@ -258,24 +258,24 @@ a:focus {
   height: 66.6%;
   position: absolute;
   box-sizing: border-box;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   font-family: 'Avenir Light',sans-serif;
   line-height: 50px;
-  font-size: 12pt;
+  font-size: 11pt;
   text-align: center;
   text-transform: lowercase;
 }
 
 .lovepone {
   position: absolute;
-  left: 22.5%;
+  left: 25%;
   top: -20%;
 }
 
 .loveptwo {
   position: absolute;
   left: 43.5%;
-  top: -20%;
+  top: -10%;
 }
 
 .sendlove:nth-child(1) {
