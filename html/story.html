@@ -16,18 +16,24 @@
     {
      $('body').hide().fadeIn(2000);
 
-    //  $('#sharebox').on('click', function(){
-    //    console.log("working")
-    //    $('#storyform').submit();
-    // })
+     $('#sharebox').on('click', function(){
+       console.log("working")
+       $('#storyform').submit();
+    })
+
+    $(document).ready(function(){
+    $("#btn").click(function(){
+    /* Single line Reset function executes on click of Reset Button */
+    $("#form")[0].reset();
+    });});
 
      var text_max = 250;
      $('#count_message').html(text_max + ' remaining');
-     $('#cats').keyup(function() {
-       var text_length = $('#cats').val().length;
+     $('#storytext').keyup(function() {
+       var text_length = $('#storytext').val().length;
        if (text_length > text_max)
        {
-         $('#cats').val($('#cats').val().slice(0, text_max));
+         $('#storytext').val($('#storytext').val().slice(0, text_max));
          text_length = text_max;
        }
        var text_remaining = text_max - text_length;
@@ -65,7 +71,7 @@
       <div class="container" id="questionaire">
         <p>Do you or a loved one live with a diagnosed mental disorder?
           Please check all that apply</p>
-        <form>
+        <form id="form">
           <div class="formContent">
           <div class="checkbox">
             <label><input type="checkbox" value="">Depression</label>
@@ -98,7 +104,7 @@
         <div class="container" id="story">
             <div class="form-group">
               <label for="share your story">Share your story</label>
-              <textarea class="form-control" rows="5" maxlength="300" id="cats"></textarea>
+              <textarea class="form-control" rows="5" maxlength="300" id="storytext"></textarea>
             </div>
             <h6 class="pull-right" id="count_message"></h6>
             <!-- <button type="submit" class="btn btn-primary btn-lg btn-primary">submit</button> -->
@@ -107,7 +113,7 @@
               <div id="sharebox">
                 <div class="submitstory"><p class="storyone">share</p></div>
                 <div class="submitstory" data-toggle="modal" data-target="#myModal">
-                  <p class="storytwo">thank you</p></div>
+                  <p class="storytwo" id="btn">thank you</p></div>
               </div>
             </figure>
           </div>
@@ -119,16 +125,16 @@
   </div>
   <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl">
 
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+          <p class="modaltext">Thank you for sharing your story</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

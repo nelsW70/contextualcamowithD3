@@ -115,6 +115,19 @@ body {
    color: rgba(207, 207, 210, 0.99);
 }
 
+.modaltext {
+   font-size: 24px;
+   font-family: "futura-pt", "Nunito", sans-serif;
+   line-height: 1.2em;
+   text-transform: none;
+   letter-spacing: .05em;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: rgba(207, 207, 210, 1);
+   text-align: center;
+}
+
 #contextualinfo {
   text-align: center;
   padding-top: 100px;
@@ -268,14 +281,14 @@ a:focus {
 
 .lovepone {
   position: absolute;
-  left: 25%;
+  left: 23.5%;
   top: -20%;
 }
 
 .loveptwo {
   position: absolute;
   left: 43.5%;
-  top: -10%;
+  top: -12%;
 }
 
 .sendlove:nth-child(1) {
