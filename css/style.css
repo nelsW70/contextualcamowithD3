@@ -67,6 +67,18 @@ body {
     background-color: #000000;
 }
 
+.camomap svg {
+  max-height: 800px;
+}
+
+.camomap {
+  /*height: 800px;*/
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 5%;
+  }
+
 /*#map {
   padding-top: 55px;
   max-width: 50%;
@@ -201,16 +213,16 @@ a:focus {
   text-decoration: none;
 }
 
-.camomap {
+/*.camomap {
   background-image: url('../img/c_camo_map_720.png');
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: center;
   background-position: top;
   height: 800px;
-  /*max-width: 100%;*/
+  max-width: 100%;
   margin-top: 2.5%;
-  }
+  }*/
 
 .overlay {
   position: absolute;
@@ -223,7 +235,7 @@ a:focus {
 }
 
 .blur {
-  filter: blur(5px);
+  filter: blur(7px);
   }
 
 .newclass {
@@ -416,3 +428,124 @@ figure:hover div {
 .close {
   color: white !important;
 }
+
+.carousel-content {
+    display:flex;
+    align-items:center;
+    color: rgba(207, 207, 210, 0.99);
+    font-size: 15px;
+    font-family: "futura-pt", "Nunito", sans-serif;
+    line-height: 1.4em;
+    text-transform: none;
+    letter-spacing: .075em;
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    margin: 0% 5%;
+}
+
+.location {
+  margin-top: -2.5%;
+  /*display: block;*/
+  align-items:center;
+  color: rgba(207, 207, 210, 0.99);
+  font-size: 15px;
+  font-family: "futura-pt", "Nunito", sans-serif;
+  line-height: 1.4em;
+  text-transform: none;
+  letter-spacing: .075em;
+  font-weight: 200;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+.depression h3 {
+    color: #03264c;
+}
+
+.anxiety h3 {
+    color: #ffff00;
+}
+
+.ocd h3 {
+    color: #94261c;
+}
+
+.dementia h3 {
+    color: #7f47dd;
+}
+
+.adhd h3 {
+    color: #ff9900;
+}
+
+.autism h3 {
+    color: #128ab2;
+}
+
+.bipolar h3 {
+    color: #64f566;
+}
+
+.schizophrenia h3 {
+    color: #db3a7a;
+}
+
+.ptsd h3 {
+    color: #159993;
+}
+
+
+.blah {
+            stroke: red;
+            stroke-width: 10px;
+        }
+
+        circle {
+            opacity: .5;
+        }
+
+        .depression {
+            fill: #03264c;
+        }
+
+        .anxiety {
+            fill: #ffff00;
+        }
+
+        .ocd {
+            fill: #94261c;
+        }
+
+        .dementia {
+            fill: #7f47dd;
+        }
+
+        .adhd {
+            fill: #ff9900;
+        }
+
+        .autism {
+            fill: #128ab2;
+        }
+
+        .bipolar {
+            fill: #64f566;
+        }
+
+        .schizophrenia {
+            fill: #db3a7a;
+        }
+
+        .ptsd {
+            fill: #159993;
+        }
+
+        svg {
+            background-color: #000000;
+        }
+
+        path {
+            fill: #504c3d;
+        }
