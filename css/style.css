@@ -58,7 +58,7 @@ body {
 /* Change the color of links on hover */
 .nav a:hover {
     color: #f2f0ee;
-    background-color: #000000; !important;
+    background-color: #000000;
 }
 
 /* Add a color to the active/current link */
@@ -122,7 +122,7 @@ body {
 
 #questionaire {
   text-align: center;
-  padding-top: 125px;
+  padding-top: 100px;
 }
 
 #story {
@@ -160,7 +160,7 @@ body {
 
 #contextualinfo {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 145px;
   max-width: 800px;
 }
 
@@ -176,7 +176,7 @@ body {
 .resources {
    font-size: 18px;
    font-family: "futura-pt", "Nunito", sans-serif;
-   line-height: 1em;
+   line-height: 1.1em;
    text-transform: none;
    letter-spacing: .075em;
    font-weight: 300;
@@ -189,7 +189,7 @@ body {
 }
 
 #resourceBlock {
-  padding-top: 85px;
+  padding-top: 65px;
 }
 
 .resourcepageline {
@@ -413,24 +413,20 @@ figure:hover div {
   bottom: -45%;
   left: 22.5%;
 }
-/*.modal-content {
-  background: transparent !important;
-  border: transparent !important;
-}*/
 
 .modal-dialog {
   max-width: 85%;
   margin: auto;
 }
 
-.modal-content {
-  background: black !important;
-  border: black !important;
+#m-content {
+  background: black;
+  border: black;
   /*opacity: .93;*/
 }
 
-.modal-header, .modal-footer {
-  border: none !important;
+#m-header, #m-footer {
+  border: none;
 }
 
 #myModal {
