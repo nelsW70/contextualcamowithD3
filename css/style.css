@@ -142,6 +142,10 @@ body {
   padding-top: 25px;
 }
 
+#phone {
+  color: red;
+}
+
 .resources {
    font-size: 18px;
    font-family: "futura-pt", "Nunito", sans-serif;
