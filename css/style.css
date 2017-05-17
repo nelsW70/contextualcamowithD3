@@ -158,19 +158,6 @@ body {
    color: rgba(207, 207, 210, 0.99);
 }
 
-.modaltext {
-   font-size: 24px;
-   font-family: "futura-pt", "Nunito", sans-serif;
-   line-height: 1.2em;
-   text-transform: none;
-   letter-spacing: .05em;
-   font-weight: 300;
-   font-style: normal;
-   text-decoration: none;
-   color: rgba(207, 207, 210, 1);
-   text-align: center;
-}
-
 #contextualinfo {
   text-align: center;
   padding-top: 100px;
@@ -432,7 +419,8 @@ figure:hover div {
 }*/
 
 .modal-dialog {
-  width:600px;
+  max-width: 85%;
+  margin: auto;
 }
 
 .modal-content {
@@ -450,6 +438,19 @@ figure:hover div {
    margin-left: auto;
    margin-right: auto;
    top: 25%;
+}
+
+.modaltext {
+   font-size: 24px;
+   font-family: "futura-pt", "Nunito", sans-serif;
+   line-height: 1.2em;
+   text-transform: none;
+   letter-spacing: .05em;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: rgba(207, 207, 210, 1);
+   text-align: center;
 }
 
 .carousel-content {
