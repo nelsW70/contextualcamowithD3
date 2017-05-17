@@ -79,19 +79,20 @@ body {
   margin-top: 5%;
   }
 
-  #homemap {
+  /*#homemap {
     max-width: 100%;
     height: auto;
     text-align: center;
     max-height: 800px;
-  }
+    margin-top: 5%;
+  }*/
 
   .overlaytwo {
     z-index: 5;
     margin-top: 3.5%;
     margin-bottom: -2.5%;
     align-items: center;
-    font-size: 21px;
+    font-size: 20px;
     font-family: "futura-pt", "Nunito", sans-serif;
     line-height: 1em;
     text-transform: none;
