@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
-@font-face {
+/*@font-face {
   font-family: "Avenir Light";
   src: url(/Users/nelsfoltz/Desktop/codefestproject/codefest site code/Avenir.ttc);
 }
 
 *font-family {
   font-family: "Avenir Light";
-}
+}*/
 
 body {
   height: 100%;
@@ -77,6 +77,30 @@ body {
   height: auto;
   text-align: center;
   margin-top: 5%;
+  }
+
+  #homemap {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    max-height: 800px;
+  }
+
+  .overlaytwo {
+    z-index: 5;
+    margin-top: 3.5%;
+    margin-bottom: -2.5%;
+    align-items: center;
+    font-size: 21px;
+    font-family: "futura-pt", "Nunito", sans-serif;
+    line-height: 1em;
+    text-transform: none;
+    letter-spacing: .075em;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
   }
 
 /*#map {
@@ -153,10 +177,6 @@ body {
 
 #logo {
   padding-top: 25px;
-}
-
-#Academylogo {
-  padding-top: 55px;
 }
 
 .resources {
@@ -425,13 +445,9 @@ figure:hover div {
    top: 25%;
 }
 
-.close {
-  color: white !important;
-}
-
 .carousel-content {
     display:flex;
-    align-items:center;
+    align-items: center;
     color: rgba(207, 207, 210, 0.99);
     font-size: 15px;
     font-family: "futura-pt", "Nunito", sans-serif;
@@ -441,24 +457,12 @@ figure:hover div {
     font-weight: 200;
     font-style: normal;
     text-decoration: none;
-    margin: 0% 5%;
+    margin: 5% 5%;
 }
 
-.location {
-  margin-top: -2.5%;
-  /*display: block;*/
-  align-items:center;
-  color: rgba(207, 207, 210, 0.99);
-  font-size: 15px;
-  font-family: "futura-pt", "Nunito", sans-serif;
-  line-height: 1.4em;
-  text-transform: none;
-  letter-spacing: .075em;
-  font-weight: 200;
-  font-style: normal;
-  text-decoration: none;
+#stories {
+  margin-top: 10%;
 }
-
 
 .depression h3 {
     color: #03264c;

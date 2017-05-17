@@ -40,9 +40,6 @@
           </div>
         </div>
         </nav>
-      <!-- <div class="row text-center">
-          <img id ="map" class="img-responsive center-block"  src="img/c_camo_map_720.png" alt="map">
-      </div> -->
     </div>
     <div class="newclass">
     <div class="camomap blur"></div>
@@ -93,7 +90,7 @@ $.get("../stories/" + type + ".partial", function(data) {
 disorders = ["depression", "anxiety", "ocd", "dementia", "adhd", "autism",
 "bipolar", "schizophrenia", "ptsd"]
 current = 0;
-wait_length = 5000;
+wait_length = 2000;
 function step() {
   current += 1;
   if (current > disorders.length - 1)
