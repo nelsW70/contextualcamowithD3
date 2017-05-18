@@ -1,209 +1,215 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <base href="./">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/d3.min.js"></script>
-    <script>if (window.module) module = window.module;</script>
+    <script>
+        if (window.module) module = window.module;
+    </script>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Contextual Camouflage</title>
     <script>
-    var stories = {};
-    function Load()
-      {
-        $.get(
-            "https://stark-fjord-40453.herokuapp.com/givejsondb",
-            function(data){
-            data.pinobj.map(submission => {
-              console.log(submission.diagnosis);
-              stories[submission.diagnosis]= submission.story;
-            })
-          });
-          //console.log(stories.Depression);
-      }
-    $(document).ready(function() {
-      $('body').hide().fadeIn(1000);
-      // setInterval( Load, 3000 );
-      Load();
-    });
-   // setCarouselHeight('#carousel-example');
-    function setCarouselHeight(id)
-    {
-        var slideHeight = [];
-        $(id+' .item').each(function()
-        {
-            // add all slide heights to an array
-            slideHeight.push($(this).height());
-        });
-        // find the tallest item
-        max = Math.max.apply(null, slideHeight);
+        var stories = {};
 
-        // set the slide's height
-        $(id+' .carousel-content').each(function()
-        {
-            $(this).css('height',max+'px');
+        function Load() {
+            $.get(
+                "https://stark-fjord-40453.herokuapp.com/givejsondb",
+                function(data) {
+                    data.pinobj.map(submission => {
+                        console.log(submission.diagnosis);
+                        stories[submission.diagnosis] = submission.story;
+                    })
+                });
+            //console.log(stories.Depression);
+        }
+        $(document).ready(function() {
+            $('body').hide().fadeIn(1000);
+            // setInterval( Load, 3000 );
+            Load();
         });
-    }
+        // setCarouselHeight('#carousel-example');
+        function setCarouselHeight(id) {
+            var slideHeight = [];
+            $(id + ' .item').each(function() {
+                // add all slide heights to an array
+                slideHeight.push($(this).height());
+            });
+            // find the tallest item
+            max = Math.max.apply(null, slideHeight);
+
+            // set the slide's height
+            $(id + ' .carousel-content').each(function() {
+                $(this).css('height', max + 'px');
+            });
+        }
     </script>
-  </head>
-  <body>
-    <div>
-      <nav class="navbar" id="myTopnav">
-        <div class="container" id="BarNav">
-          <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse"
-          data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-       </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="home.html" id="navtitle">Contextual Camouflage</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="story.html">Your Story</a></li>
-            <li><a href="resources.html">Help Resources</a></li>
-          </ul>
-        </div>
-      </div>
-      </nav>
-  </div>
-    <div class="newclass" id="homemap">
-      <div class="overlaytwo">
-        <p><strong>
-          Oakland, PA 12/18/2017 8:35PM
-          </strong>
-        </p>
-      </div>
-      <div class="camomap"></div>
-      <div class="overlay">
-        <div class="container">
-          <div id="stories"></div>
-        </div>
-      </div>
-    </div>
-  <script type="text/javascript">
-function loadStories(type){
-$.get("../stories/" + type + ".partial", function(data) {
-  $("#stories").html(data);
-  $('.carousel').carousel('cycle');
-});
-}
-disorders = ["depression", "anxiety", "ocd", "dementia", "adhd", "autism",
-"bipolar", "schizophrenia", "ptsd"]
-current = 0;
-wait_length = 5000;
-function step() {
-  current += 1;
-  if (current > disorders.length - 1)
-  {
-    current = 0;
-  }
-  point_shrink();
-  loadStories(disorders[current]);
-  setTimeout(step, wait_length + 2000);
-}
-function addPoint()
-{
-  var d = [-79.9546228390381, 40.44429974006806]
-  svg.append("circle")
-    .attr("cx", projection(d)[0])
-    .attr("cy", projection(d)[1])
-    .attr("class", "ocd new")
-    .attr("r", "10px");
-  setTimeout(function () {
-    svg.selectAll(".new")
-      .transition()
-      .duration(1000)
-      .ease(Math.sqrt)
-      .attr("r", "50");
-    setTimeout(function() {
-      svg.selectAll(".new")
-        .transition()
-        .duration(4000)
-        .ease(Math.sqrt)
-        .attr("r", "30");
-      svg.selectAll(".new")
-        .attr("class", "ocd");
-    }, 1000);
-  }, 500);
-}
-function point_grow()
-{
-  svg.selectAll("." + disorders[current])
-    //below is animation
-    .transition()
-    .duration(1000)
-    .ease(Math.sqrt)
-    .attr("r", "45px");
-}
-function point_shrink()
-{
-  svg.selectAll("circle")
-    .transition()
-    .duration(1000)
-    .ease(Math.sqrt)
-    .attr("r", "5px");
-  setTimeout(point_grow, 1500);
-}
-    //Width and height of SVG
-    var w = 500;
-    var h = 800;
+</head>
 
-    //Get sample points
-    var samplePoints;
-    $.getJSON("../json/samplePointsSquare.json", function(result) {
+<body>
+    <div>
+        <nav class="navbar" id="myTopnav">
+            <div class="container" id="BarNav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html" id="navtitle">Contextual Camouflage</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="story.html">Your Story</a></li>
+                        <li><a href="resources.html">Help Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="newclass" id="homemap">
+        <div class="overlaytwo">
+            <p>
+          Oakland, PA 12/18/2017 8:35PM
+            </p>
+        </div>
+        <div class="camomap"></div>
+        <div class="overlay">
+            <div class="container">
+                <div id="stories"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function loadStories(type) {
+            $.get("../stories/" + type + ".partial", function(data) {
+                $("#stories").html(data);
+                $('.carousel').carousel('cycle');
+            });
+        }
+        disorders = ["depression", "anxiety", "ocd", "dementia", "adhd", "autism",
+            "bipolar", "schizophrenia", "ptsd"
+        ]
+        current = 0;
+        wait_length = 5000;
+
+        function step() {
+            current += 1;
+            if (current > disorders.length - 1) {
+                current = 0;
+            }
+            point_shrink();
+            loadStories(disorders[current]);
+            setTimeout(step, wait_length + 2000);
+        }
+
+        function addPoint() {
+            var d = [-79.9546228390381, 40.44429974006806]
+            svg.append("circle")
+                .attr("cx", projection(d)[0])
+                .attr("cy", projection(d)[1])
+                .attr("class", "ocd new")
+                .attr("r", "10px");
+            setTimeout(function() {
+                svg.selectAll(".new")
+                    .transition()
+                    .duration(1000)
+                    .ease(Math.sqrt)
+                    .attr("r", "50");
+                setTimeout(function() {
+                    svg.selectAll(".new")
+                        .transition()
+                        .duration(4000)
+                        .ease(Math.sqrt)
+                        .attr("r", "30");
+                    svg.selectAll(".new")
+                        .attr("class", "ocd");
+                }, 1000);
+            }, 500);
+        }
+
+        function point_grow() {
+            svg.selectAll("." + disorders[current])
+                //below is animation
+                .transition()
+                .duration(1000)
+                .ease(Math.sqrt)
+                .attr("r", "45px");
+        }
+
+        function point_shrink() {
+            svg.selectAll("circle")
+                .transition()
+                .duration(1000)
+                .ease(Math.sqrt)
+                .attr("r", "5px");
+            setTimeout(point_grow, 1500);
+        }
+        //Width and height of SVG
+        var w = 500;
+        var h = 800;
+
+        //Get sample points
+        var samplePoints;
+        $.getJSON("../json/samplePointsSquare.json", function(result) {
             //console.log(result);
             samplePoints = result;
         })
 
-    //Define map projection
-    var projection = d3.geoMercator()
-        .center([-79.955426, 40.449129])
-        .scale(1500000)
-        .translate([w / 2, h / 2]);
+        //Define map projection
+        var projection = d3.geoMercator()
+            .center([-79.955426, 40.449129])
+            .scale(1500000)
+            .translate([w / 2, h / 2]);
 
-    //Create path constructor
-    var path = d3.geoPath().projection(projection);
+        //Create path constructor
+        var path = d3.geoPath().projection(projection);
 
-    //Create SVG constructor
-    var svg = d3.select(".camomap")
-        .append("svg")
-        .attr("viewBox", "0 0 500 800");
+        //Create SVG constructor
+        var svg = d3.select(".camomap")
+            .append("svg")
+            .attr("viewBox", "0 0 500 800");
 
-    //Load in GeoJSON data
-    d3.json("../json/NorthOakland.json", function(error, json) {
-        //Append the path
-        svg.append("path")
-            .datum({
-                type: "FeatureCollection",
-                features: json.features
-            })
-            .attr("d", path)
-            .attr("stroke", "#333");
+        //Load in GeoJSON data
+        d3.json("../json/NorthOakland.json", function(error, json) {
+            //Append the path
+            svg.append("path")
+                .datum({
+                    type: "FeatureCollection",
+                    features: json.features
+                })
+                .attr("d", path)
+                .attr("stroke", "#333");
 
-        //CIRCLES
+            //CIRCLES
 
-        svg.selectAll("circle")
-            .data(samplePoints).enter()
-            .append("circle")
-            .attr("cx", function(d) {
-                return projection(d)[0];
-            })
-            .attr("cy", function(d) {
-                return projection(d)[1];
-            }).attr("class", function(d) {
-                return d[2];
-            })
-            .attr("r", "5px");
-    });
+            svg.selectAll("circle")
+                .data(samplePoints).enter()
+                .append("circle")
+                .attr("cx", function(d) {
+                    return projection(d)[0];
+                })
+                .attr("cy", function(d) {
+                    return projection(d)[1];
+                }).attr("class", function(d) {
+                    return d[2];
+                })
+                .attr("r", "5px");
+        });
 
-  setTimeout(step, 1500);
-</script>
-  </body>
+        setTimeout(step, 1500);
+    </script>
+</body>
+
 </html>
