@@ -26,12 +26,12 @@ body {
   color: rgb(51, 51, 51);
   overflow: hidden;
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   style: normal;
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   text-align: center;
 }
@@ -145,7 +145,7 @@ body {
 
 #contextualinfo {
   text-align: center;
-  padding-top: 145px;
+  padding-top: 100px;
   max-width: 800px;
 }
 
@@ -160,6 +160,10 @@ body {
 
 #phone {
   color: red;
+}
+
+.phone {
+  color: maroon;
 }
 
 .resources {
