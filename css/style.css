@@ -266,8 +266,8 @@ a:focus {
   color: white;
 }
 
-
-/*#loveinfo {
+/*
+#loveinfo {
    font-size: 18px;
    font-family: "futura-pt", "Nunito", sans-serif;
    line-height: 1.8em;
@@ -277,13 +277,13 @@ a:focus {
    font-style: normal;
    text-decoration: none;
    color: rgba(207, 207, 210, 0.99);
-}*/
+}
 
-/*.loveBlock {
+.loveBlock {
   padding-top: 75px;
-}*/
+}
 
-/*#loveinfo {
+#loveinfo {
   text-align: center;
   margin-top: 20%;
 }
