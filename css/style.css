@@ -5,6 +5,8 @@ body {
   background-color: #000000;
 }
 
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 .nav {
     background-color: #000000;
     color: rgba(255, 255, 255, 0.5);
