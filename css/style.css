@@ -50,6 +50,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 #BarNav {
   text-align: center;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .nav a {
